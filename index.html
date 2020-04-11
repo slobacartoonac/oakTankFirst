@@ -1,0 +1,52 @@
+<head>
+<meta charset="UTF-8" />
+<title>Oak Tank</title>
+<script type="text/javascript" src="js/audio.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/vecmath.js"></script>
+<script type="text/javascript" src="js/oakEngine.js"></script>
+<script type="text/javascript" src="js/loader.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/mesh.js"></script>
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/rendable.js"></script>
+<script type="text/javascript" src="js/score.js"></script>
+<style>
+    .container
+    {
+        margin: auto;
+        width: 800px;
+    }
+    #canvas 
+    {
+        position: absolute;
+        margin: 0px 0px;
+    }
+    #loading 
+    {
+        position: absolute;
+        margin: 0px 0px;
+    }
+    #say 
+    {
+        position: absolute;
+        margin: 100px 100px;
+        color: white;
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="say">
+        <a href="http://oaklaunch.com/" style="position:absolute;margin:-50px 0px 0px 350px;"><img src="./img/logo.png" style="position:absolute;margin-top:10px;">Come to visit</a>
+        <div onclick="eventShoot()">
+        <h3>Kill all blue tanks!<h3>Press Space to start, </br>in game Space to shoot, </br>arrow keys to move, </br>E,Q camera height.</br> <img src="./img/contols.png"/>
+    </div>
+    </div>
+    <div id="loading">
+        <img src="./img/loading.jpg" width="800" height="600"></canvas>
+    </div>
+    <div>
+</body>
